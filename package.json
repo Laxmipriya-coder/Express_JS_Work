@@ -4,7 +4,8 @@
   "description": "Express.js is a fast, lightweight and flexible web application framwork for node.js.",
   "main": "index.js",
   "scripts": {
-    "server":"nodemon server.js"
+    "server":"nodemon server.js",
+    "Task":"nodemon Task.js"
   },
   "keywords": [],
   "author": "",
