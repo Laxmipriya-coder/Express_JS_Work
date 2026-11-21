@@ -1,6 +1,6 @@
 const express = require("express");
 const fs = require("fs");
-const { getallUsersController, createUserController, getUserBYIdController } = require("./controllers/filesystemController");
+const { getallUsersController, createUserController, getUserBYIdController, updateUserByIdController, deleteUserByIdController } = require("./controllers/filesystemController");
 
 const app = express();
 app.use(express.json())
@@ -14,7 +14,10 @@ app.post("/createuser",createUserController);
 // GET INDIVIDUAL USER DATA WITH ID 
 app.get("/profile/:id",getUserBYIdController);
 
+// Update USER
+app.put("/update/:id",updateUserByIdController);
 
+app.delete("/delete/:id",deleteUserByIdController);
 app.listen(8070, () => {
     console.log("Server is Running.....");
 })
