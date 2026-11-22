@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "server":"nodemon server.js",
-    "Task":"nodemon Task.js"
+    "Task":"nodemon Task.js",
+    "app":"nodemon app.js"
   },
   "keywords": [],
   "author": "",
