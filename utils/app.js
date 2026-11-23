@@ -1,10 +1,13 @@
 const express= require("express");
 const { getallusersController, createUserController, getUserByIDController, updateUserByIdController, deleteUserByIdController } = require("./controllers/filesystemControllers");
 const { getAllPostsByUserIdController, createNewPostByUserId } = require("./controllers/userPostsControllers");
+const cors = require("cors");
 
 const app=express();
 app.use(express.json())
-
+app.cors=({
+    origin:"*"
+})
 
 
 // routes
